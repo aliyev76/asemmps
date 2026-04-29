@@ -41,7 +41,7 @@ const App: React.FC = () => {
       <header>
         <div className="container nav-wrapper">
           <div className="logo-area">
-            <img src={logoImg} alt="Asemm Logo" style={{ width: '48px', height: '48px', borderRadius: '12px' }} />
+            <img src={logoImg} alt="Asemm Logo" style={{ width: '48px', height: '48px' }} />
             <div>
               <span className="no-wrap" style={{ fontSize: '26px', fontWeight: 900, lineHeight: 1 }}>ASEMM</span>
               <span className="no-wrap" style={{ fontSize: '10px', color: 'var(--ps-blue)', fontWeight: 800, textTransform: 'uppercase' }}>PlayStation Cafe</span>
