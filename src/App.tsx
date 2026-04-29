@@ -187,23 +187,65 @@ const App: React.FC = () => {
         <div className="container">
           <div className="hero-grid" style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div className="hero-content contact-stack">
-              <h2 className="title-section no-wrap" style={{ textAlign: 'inherit', marginBottom: '40px' }}>{t('contact_title')}</h2>
-              
-              <div className="contact-item">
-                <div className="contact-icon"><MapPin size={24} /></div>
-                <div className="contact-text">
-                  <div className="contact-label no-wrap">KONUM</div>
-                  <div className="contact-value">{t('contact_address')}</div>
-                </div>
-              </div>
+              <h2 className="title-section no-wrap" style={{ textAlign: 'inherit', marginBottom: '32px' }}>{t('contact_title')}</h2>
 
-              <div className="contact-item">
-                <div className="contact-icon"><Phone size={24} /></div>
-                <div className="contact-text">
-                  <div className="contact-label no-wrap">WHATSAPP</div>
-                  <div className="contact-value no-wrap">+90 551 981 59 16</div>
+              {/* Location Card */}
+              <a
+                href="https://maps.google.com/?q=Bağlarbaşı+Mahallesi+Kızlarpınarı+Caddesi+130/C+Keçiören+Ankara"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', display: 'block', width: '100%', marginBottom: '16px' }}
+              >
+                <div className="contact-card" style={{
+                  display: 'flex', alignItems: 'center', gap: '20px',
+                  padding: '20px 24px',
+                  background: 'linear-gradient(135deg, rgba(0,114,206,0.12), rgba(0,114,206,0.04))',
+                  border: '1px solid rgba(0,114,206,0.3)',
+                  borderRadius: '20px',
+                  transition: 'all 0.3s',
+                  cursor: 'pointer'
+                }}
+                onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,114,206,0.8)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 30px rgba(0,114,206,0.2)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,114,206,0.3)'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; }}
+                >
+                  <div style={{ padding: '14px', background: 'rgba(0,114,206,0.2)', borderRadius: '14px', flexShrink: 0 }}>
+                    <MapPin size={24} color="var(--ps-blue)" />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '10px', fontWeight: 900, color: 'var(--ps-blue)', letterSpacing: '0.12em', marginBottom: '4px' }}>KONUM</div>
+                    <div style={{ fontWeight: 600, fontSize: '14px', color: 'white', lineHeight: 1.4 }}>{t('contact_address')}</div>
+                  </div>
                 </div>
-              </div>
+              </a>
+
+              {/* WhatsApp Card */}
+              <a
+                href="https://wa.me/905519815916"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', display: 'block', width: '100%', marginBottom: '24px' }}
+              >
+                <div className="contact-card" style={{
+                  display: 'flex', alignItems: 'center', gap: '20px',
+                  padding: '20px 24px',
+                  background: 'linear-gradient(135deg, rgba(37,211,102,0.12), rgba(37,211,102,0.04))',
+                  border: '1px solid rgba(37,211,102,0.3)',
+                  borderRadius: '20px',
+                  transition: 'all 0.3s',
+                  cursor: 'pointer'
+                }}
+                onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(37,211,102,0.8)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 30px rgba(37,211,102,0.2)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(37,211,102,0.3)'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; }}
+                >
+                  <div style={{ padding: '14px', background: 'rgba(37,211,102,0.2)', borderRadius: '14px', flexShrink: 0 }}>
+                    <Phone size={24} color="#25D366" />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '10px', fontWeight: 900, color: '#25D366', letterSpacing: '0.12em', marginBottom: '4px' }}>WHATSAPP</div>
+                    <div className="no-wrap" style={{ fontWeight: 800, fontSize: '18px', color: 'white' }}>+90 551 981 59 16</div>
+                  </div>
+                </div>
+              </a>
 
               <a href="https://wa.me/905519815916" className="btn btn-primary" style={{ width: '100%' }}>
                 <span className="no-wrap">{t('whatsapp_cta')}</span>
