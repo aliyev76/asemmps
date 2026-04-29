@@ -156,7 +156,7 @@ const App: React.FC = () => {
             <div className="hero-content" style={{ textAlign: 'left' }}>
               <h2 className="title-section" style={{ textAlign: 'inherit', marginBottom: '16px' }}>{t('games_title')}</h2>
               <p className="desc-text" style={{ textAlign: 'inherit', marginBottom: '32px', margin: '0' }}>{t('games_subtitle')}</p>
-              <div className="games-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '12px' }}>
+              <div className="games-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px' }}>
                 {[
                   'FIFA 26', 
                   'Mortal Kombat 11', 
@@ -167,7 +167,7 @@ const App: React.FC = () => {
                 ].map((game, i) => (
                   <div key={i} className="game-card" style={{ padding: '16px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--ps-blue)' }}></div>
-                    {game}
+                    <span style={{ whiteSpace: 'nowrap' }}>{game}</span>
                   </div>
                 ))}
               </div>

@@ -173,7 +173,7 @@ header {
 }
 
 /* Perfect Tablet/Mobile Balance (up to 768px) */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
   .hero-content { order: 2; display: flex; flex-direction: column; align-items: center; }
   .hero-image { order: 1; }
@@ -185,7 +185,7 @@ header {
   .btn { width: 100%; margin-top: 10px; }
   .hero-image img { max-height: 350px; width: 100%; }
 
-  /* Games Grid - 2 Columns forced for all small screens */
+  /* Games Grid - MANDATORY 2 COLUMNS */
   .games-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
   .game-card { padding: 14px !important; font-size: 13px !important; }
 
