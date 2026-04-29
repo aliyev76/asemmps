@@ -25,8 +25,13 @@ const App: React.FC = () => {
         <meta name="description" content={t('meta_desc')} />
       </Helmet>
 
+      {/* Slogan Top Bar */}
+      <div style={{ background: 'var(--ps-blue)', color: 'white', textAlign: 'center', padding: '8px 0', fontSize: '12px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+        Keçiören'in en heyecanlandıran yeri
+      </div>
+
       {/* Proper Header */}
-      <header>
+      <header style={{ top: '32px' }}>
         <div className="container">
           <div className="logo-area">
             <img src={logoImg} alt="Asemm Logo" />
