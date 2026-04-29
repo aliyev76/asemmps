@@ -141,7 +141,7 @@ const App: React.FC = () => {
               { icon: <Cpu size={40} />, title: t('feature_2_title'), desc: t('feature_2_desc') },
               { icon: <Zap size={40} />, title: t('feature_3_title'), desc: t('feature_3_desc') },
             ].map((f, i) => (
-              <div key={i} style={{ padding: '40px', background: 'var(--bg-card)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.03)' }}>
+              <div key={i} className="feature-card">
                 <div style={{ color: 'var(--ps-blue)', marginBottom: '24px' }}>{f.icon}</div>
                 <h3 className="no-wrap" style={{ fontSize: '24px', marginBottom: '16px' }}>{f.title}</h3>
                 <p style={{ color: 'var(--text-secondary)' }}>{f.desc}</p>
