@@ -64,7 +64,7 @@ const App: React.FC = () => {
             </div>
             <a href="https://wa.me/905519815916" className="btn btn-primary">
               <span className="btn-text-desktop">{t('whatsapp_cta')}</span>
-              <span className="btn-text-mobile">📞</span>
+              <span className="btn-text-mobile"><Phone size={18} /></span>
             </a>
           </div>
         </div>
