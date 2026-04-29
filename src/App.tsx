@@ -246,11 +246,7 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </a>
-
-              <a href="https://wa.me/905519815916" className="btn btn-primary" style={{ width: '100%' }}>
-                <span className="no-wrap">{t('whatsapp_cta')}</span>
-              </a>
-            </div>
+                          </div>
             <div style={{ padding: '40px', background: 'var(--bg-card)', borderRadius: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)' }}>
                <InstagramIcon />
                <p style={{ marginTop: '24px', fontWeight: 700, fontSize: '17px' }}>En yeni turnuvalar için bizi takip edin!</p>
