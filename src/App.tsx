@@ -158,8 +158,8 @@ const App: React.FC = () => {
       <section className="section-padding" style={{ background: 'var(--bg-card)' }}>
         <div className="container">
           <div className="hero-grid">
-            <div className="hero-image" style={{ maxHeight: '300px', overflow: 'hidden', borderRadius: '20px' }}>
-              <img src={gamesImg} alt="Games" style={{ borderRadius: '20px', border: '1px solid rgba(255,255,255,0.03)', height: '100%', width: '100%', objectFit: 'cover' }} />
+            <div className="hero-image">
+              <img src={gamesImg} alt="Games" style={{ borderRadius: '20px', border: '1px solid rgba(255,255,255,0.03)' }} />
             </div>
             <div className="hero-content">
               <h2 className="title-section" style={{ textAlign: 'inherit', marginBottom: '16px' }}>{t('games_title')}</h2>
