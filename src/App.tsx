@@ -19,14 +19,14 @@ const App: React.FC = () => {
   const { t, language, setLanguage } = useTranslation();
 
   return (
-    <div className={language === 'ar' ? 'rtl' : 'ltr'}>
+    <div className={language === 'ar' ? 'rtl' : 'ltr'} style={{ background: 'radial-gradient(circle at 50% -20%, #1a1a2e 0%, #0c0c14 100%)' }}>
       <Helmet>
         <title>{t('meta_title')}</title>
         <meta name="description" content={t('meta_desc')} />
       </Helmet>
 
       {/* Slogan Top Bar */}
-      <div style={{ background: 'var(--ps-blue)', color: 'white', textAlign: 'center', padding: '10px 0', fontSize: '11px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.15em', position: 'relative', zIndex: 1100 }}>
+      <div style={{ background: 'var(--ps-blue)', color: 'white', textAlign: 'center', padding: '10px 0', fontSize: '11px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.15em', position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 1200 }}>
         Keçiören'in en heyecanlandıran yeri
       </div>
 
@@ -41,19 +41,19 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <div className="lang-dropdown">
-              <button className="lang-btn">
+              <button className="lang-btn" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <Globe size={16} />
-                <span style={{ marginLeft: '6px' }}>{language.toUpperCase()}</span>
+                <span>{language.toUpperCase()}</span>
               </button>
               <div className="lang-menu">
-                <button onClick={() => setLanguage('tr')}>TR</button>
-                <button onClick={() => setLanguage('en')}>EN</button>
-                <button onClick={() => setLanguage('ar')}>AR</button>
+                <button onClick={() => setLanguage('tr')} style={{ width: '100%', padding: '12px', textAlign: 'center', background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontWeight: 700 }}>TR</button>
+                <button onClick={() => setLanguage('en')} style={{ width: '100%', padding: '12px', textAlign: 'center', background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontWeight: 700 }}>EN</button>
+                <button onClick={() => setLanguage('ar')} style={{ width: '100%', padding: '12px', textAlign: 'center', background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontWeight: 700 }}>AR</button>
               </div>
             </div>
-            <a href="https://wa.me/905519815916" className="btn btn-primary" style={{ padding: '10px 20px', fontSize: '13px', borderRadius: '10px' }}>
+            <a href="https://wa.me/905519815916" className="btn btn-primary" style={{ padding: '10px 18px', fontSize: '13px', borderRadius: '10px', whiteSpace: 'nowrap' }}>
               {t('whatsapp_cta')}
             </a>
           </div>
@@ -82,14 +82,14 @@ const App: React.FC = () => {
               </a>
             </div>
             <div className="hero-image">
-              <img src={heroImg} alt="Gaming Zone" style={{ border: '1px solid rgba(255,255,255,0.1)' }} />
+              <img src={heroImg} alt="Gaming Zone" style={{ border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 20px 50px rgba(0,0,0,0.3)' }} />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Netflix & Cinema Section - Typography Fixed */}
-      <section className="section-padding" style={{ background: 'linear-gradient(to bottom, #050507, #0d0d0f)' }}>
+      {/* Netflix & Cinema Section */}
+      <section className="section-padding" style={{ background: 'rgba(255,255,255,0.02)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <div style={{ color: '#E50914', fontWeight: 800, fontSize: '13px', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
@@ -98,7 +98,7 @@ const App: React.FC = () => {
             </div>
             <h2 className="title-section" style={{ fontSize: 'clamp(36px, 6vw, 56px)' }}>{t('cinema_title')}</h2>
             
-            <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <div style={{ maxWidth: '650px', margin: '0 auto' }}>
               <p style={{ fontSize: '22px', color: 'white', marginBottom: '20px', fontWeight: 700, lineHeight: 1.3 }} className="text-balance">
                 {t('cinema_subtitle')}
               </p>
@@ -113,11 +113,11 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="hero-image" style={{ maxWidth: '800px', margin: '0 auto', position: 'relative' }}>
-            <div style={{ position: 'absolute', inset: '-20px', background: 'radial-gradient(circle, rgba(229, 9, 20, 0.15) 0%, transparent 70%)', filter: 'blur(30px)' }}></div>
-            <div style={{ padding: '12px', background: '#1a1a1e', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+          <div className="hero-image" style={{ maxWidth: '850px', margin: '0 auto', position: 'relative' }}>
+            <div style={{ position: 'absolute', inset: '-30px', background: 'radial-gradient(circle, rgba(229, 9, 20, 0.1) 0%, transparent 70%)', filter: 'blur(40px)' }}></div>
+            <div style={{ padding: '15px', background: '#1a1a22', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 40px 80px rgba(0,0,0,0.6)' }}>
                <div style={{ width: '100%', aspectRatio: '16/9', background: '#000', borderRadius: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                  <span style={{ color: '#E50914', fontSize: 'clamp(40px, 10vw, 80px)', fontWeight: 900, letterSpacing: '-0.04em' }}>NETFLIX</span>
+                  <span style={{ color: '#E50914', fontSize: 'clamp(40px, 10vw, 90px)', fontWeight: 900, letterSpacing: '-0.04em' }}>NETFLIX</span>
                </div>
             </div>
           </div>
@@ -152,12 +152,12 @@ const App: React.FC = () => {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-image">
-              <img src={gamesImg} alt="Games Catalog" style={{ borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }} />
+              <img src={gamesImg} alt="Games Catalog" style={{ borderRadius: '24px', border: '1px solid rgba(255,255,255,0.03)' }} />
             </div>
             <div className="hero-content" style={{ textAlign: 'left' }}>
               <h2 className="title-section" style={{ textAlign: 'left', marginBottom: '16px' }}>{t('games_title')}</h2>
               <p style={{ fontSize: '18px', color: 'var(--text-secondary)', marginBottom: '32px' }}>{t('games_subtitle')}</p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '12px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '15px' }}>
                 {[
                   'FIFA 26', 
                   'Mortal Kombat 11', 
@@ -166,7 +166,7 @@ const App: React.FC = () => {
                   'GTA V', 
                   'NBA 2K'
                 ].map((game, i) => (
-                  <div key={i} style={{ padding: '16px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', fontWeight: 700, fontSize: '14px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <div key={i} style={{ padding: '18px', background: 'rgba(255,255,255,0.02)', borderRadius: '14px', fontWeight: 700, fontSize: '14px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--ps-blue)' }}></div>
                     {game}
                   </div>
@@ -202,9 +202,9 @@ const App: React.FC = () => {
               </a>
             </div>
             <div className="hero-image">
-               <div style={{ padding: '40px', background: 'var(--bg-card)', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
+               <div style={{ padding: '40px', background: 'var(--bg-card)', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.03)', textAlign: 'center' }}>
                   <InstagramIcon />
-                  <p style={{ marginTop: '24px', fontWeight: 700, fontSize: '17px', color: 'white' }}>En yeni turnuvalar ve güncellemeler için bizi takip edin!</p>
+                  <p style={{ marginTop: '24px', fontWeight: 700, fontSize: '17px', color: 'white' }}>En yeni turnuvalar için bizi takip edin!</p>
                   <a href="https://www.instagram.com/asemmplaystation/" target="_blank" rel="noopener noreferrer" className="btn" style={{ marginTop: '24px', background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)', color: 'white', width: '100%' }}>Instagram'a Katıl</a>
                </div>
             </div>
@@ -213,7 +213,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer style={{ background: '#030305', padding: '60px 0' }}>
+      <footer style={{ background: '#08080f', padding: '60px 0' }}>
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '30px' }}>
             <div className="logo-area">
