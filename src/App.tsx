@@ -108,10 +108,10 @@ const App: React.FC = () => {
             <h2 className="title-section no-wrap">NETFLİX KEYFİ</h2>
             
             <div style={{ maxWidth: '100%', margin: '0 auto' }}>
-              <p className="no-wrap" style={{ fontSize: 'clamp(14px, 4.5vw, 20px)', color: 'white', marginBottom: '16px', fontWeight: 400, lineHeight: 1.3 }}>
+              <p className="no-wrap" style={{ fontSize: 'clamp(14px, 4.5vw, 18px)', color: 'var(--text-secondary)', marginBottom: '0', fontWeight: 400, lineHeight: 1.5 }}>
                 Oyun biter, sinema başlar!
               </p>
-              <p className="no-wrap" style={{ fontSize: 'clamp(10px, 3vw, 15px)', color: 'var(--text-secondary)', marginBottom: '40px' }}>
+              <p className="no-wrap" style={{ fontSize: 'clamp(14px, 4.5vw, 18px)', color: 'var(--text-secondary)', marginBottom: '40px', fontWeight: 400, lineHeight: 1.5 }}>
                 VIP odalarımızda Netflix keyfini dev ekranda yaşa.
               </p>
             </div>
