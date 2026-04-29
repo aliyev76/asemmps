@@ -154,13 +154,13 @@ header {
 }
 
 /* Sections */
-.section-padding { padding: 80px 0; }
-@media (min-width: 1024px) { .section-padding { padding: 120px 0; } }
+.section-padding { padding: 50px 0; }
+@media (min-width: 1024px) { .section-padding { padding: 70px 0; } }
 
 .hero {
-  padding-top: calc(var(--nav-height) + var(--top-bar-height) + 60px);
-  padding-bottom: 80px;
-  min-height: 85vh;
+  padding-top: calc(var(--nav-height) + var(--top-bar-height) + 30px);
+  padding-bottom: 50px;
+  min-height: auto;
   display: flex;
   align-items: center;
 }
