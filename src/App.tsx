@@ -121,7 +121,7 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div style={{ maxWidth: '850px', margin: '0 auto', padding: '10px', background: '#1a1a22', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+          <div style={{ padding: '10px', background: '#1a1a22', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
              <div style={{ width: '100%', aspectRatio: '16/9', background: '#000', borderRadius: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle, rgba(229, 9, 20, 0.1) 0%, transparent 80%)' }}></div>
                 <span className="no-wrap" style={{ color: '#E50914', fontSize: 'clamp(40px, 12vw, 100px)', fontWeight: 900, letterSpacing: '-0.02em', textShadow: '0 0 40px rgba(229, 9, 20, 0.4)' }}>NETFLIX</span>
@@ -184,7 +184,7 @@ const App: React.FC = () => {
       {/* Contact Section */}
       <section className="section-padding">
         <div className="container">
-          <div className="hero-grid" style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div className="hero-grid">
             <div className="hero-content contact-stack">
               <h2 className="title-section no-wrap" style={{ textAlign: 'inherit', marginBottom: '32px' }}>{t('contact_title')}</h2>
 
