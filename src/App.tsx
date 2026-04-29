@@ -145,7 +145,7 @@ const App: React.FC = () => {
               <div className="games-grid">
                 {[
                   'FIFA 26', 
-                  'Mortal Kombat 1', 
+                  'Mortal Kombat 11', 
                   'PES 26', 
                   'Asphalt', 
                   'GTA V', 
