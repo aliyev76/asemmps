@@ -173,6 +173,9 @@ header {
 }
 
 /* Perfect Tablet/Mobile Balance (up to 768px) */
+.btn-text-mobile { display: none; }
+.btn-text-desktop { display: inline; }
+
 @media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
   .hero-content { order: 2; display: flex; flex-direction: column; align-items: center; }
@@ -207,6 +210,9 @@ header {
   .logo-area div span:last-child { font-size: 7px !important; }
   .nav-actions { gap: 8px; }
   .lang-dropdown-btn { padding: 6px 8px; font-size: 10px; }
+  .btn-text-desktop { display: none; }
+  .btn-text-mobile { display: inline; font-size: 18px; }
+  .btn { padding: 8px 12px !important; }
 }
 
 .title-large { font-size: clamp(32px, 8vw, 72px); line-height: 1.1; margin-bottom: 24px; }

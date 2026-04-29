@@ -63,7 +63,8 @@ const App: React.FC = () => {
               )}
             </div>
             <a href="https://wa.me/905519815916" className="btn btn-primary">
-              {t('whatsapp_cta')}
+              <span className="btn-text-desktop">{t('whatsapp_cta')}</span>
+              <span className="btn-text-mobile">📞</span>
             </a>
           </div>
         </div>
@@ -259,7 +260,7 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer style={{ background: '#05050a', padding: '60px 0', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '30px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
             <div className="logo-area">
                <img src={logoImg} alt="Asemm Logo" style={{ width: '36px', height: '36px' }} />
                <span className="no-wrap" style={{ fontWeight: 900, fontSize: '20px' }}>ASEMM</span>
@@ -267,6 +268,8 @@ const App: React.FC = () => {
             <div className="no-wrap" style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
               © 2026 ASEMM PS CAFE
             </div>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
             <div className="no-wrap" style={{ fontWeight: 900, fontSize: '11px', color: 'var(--ps-blue)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               Keçiören'in en heyecanlandıran yeri
             </div>
