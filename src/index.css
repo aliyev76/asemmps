@@ -209,11 +209,15 @@ header {
   .lang-dropdown-btn { padding: 6px 8px; font-size: 10px; }
 }
 
-.title-large { font-size: clamp(40px, 8vw, 72px); line-height: 1.1; margin-bottom: 24px; }
-.title-section { font-size: clamp(32px, 6vw, 48px); margin-bottom: 20px; }
+.title-large { font-size: clamp(32px, 8vw, 72px); line-height: 1.1; margin-bottom: 24px; }
+.title-section { font-size: clamp(24px, 6vw, 48px); margin-bottom: 20px; }
 .desc-text { color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
 .neon-text { color: var(--accent-neon); text-shadow: 0 0 15px rgba(0, 242, 255, 0.4); }
-.text-balance { text-wrap: balance; }
+
+.no-wrap {
+  white-space: nowrap !important;
+  display: block;
+}
 
 /* Preservation of hardcoded caps */
 .top-bar, .title-large, .title-section, .btn, .lang-dropdown-menu button {
