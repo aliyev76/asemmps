@@ -189,22 +189,29 @@ header {
 @media (max-width: 480px) {
   :root { --nav-height: 64px; }
   header { top: var(--top-bar-height); height: var(--nav-height); }
-  .hero { padding-top: calc(var(--nav-height) + var(--top-bar-height) + 40px); }
+  .hero { padding-top: calc(var(--nav-height) + var(--top-bar-height) + 20px); }
   
   .logo-area div span:first-child { font-size: 18px !important; }
   .logo-area div span:last-child { font-size: 8px !important; }
   
   .btn-header-cta { padding: 8px 12px !important; font-size: 12px !important; border-radius: 8px !important; }
-  .btn-header-cta span { display: none; } /* Hide text on ultra small screens if needed, but let's keep it tight first */
-
-  .title-large { font-size: 36px; line-height: 1.2; }
-  .title-section { font-size: 28px; line-height: 1.3; }
+  
+  .title-large { font-size: 32px; line-height: 1.2; }
+  .title-section { font-size: 26px; line-height: 1.3; }
   
   .desc-text { font-size: 14px; line-height: 1.6; padding: 0 10px; }
   
+  .hero-image img { max-height: 300px; object-fit: cover; width: 100%; }
+  .hero-image { max-height: 300px; overflow: hidden; border-radius: 20px; }
+
   /* Netflix Section Mobile Fixing */
-  .netflix-subtitle { font-size: 17px !important; line-height: 1.4 !important; padding: 0 15px; }
-  .netflix-desc { font-size: 14px !important; padding: 0 20px; }
+  .netflix-subtitle { font-size: 16px !important; line-height: 1.4 !important; padding: 0 15px; }
+  .netflix-desc { font-size: 13px !important; padding: 0 20px; }
+}
+
+/* Preservation of hardcoded caps */
+.top-bar, .title-large, .title-section, .btn, .nav-actions div, .lang-dropdown-menu button {
+  text-transform: none !important; /* Use hardcoded strings from translations.ts */
 }
 
 .title-large { font-size: clamp(36px, 8vw, 68px); line-height: 1.1; margin-bottom: 24px; }
