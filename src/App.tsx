@@ -41,10 +41,10 @@ const App: React.FC = () => {
       <header>
         <div className="container nav-wrapper">
           <div className="logo-area">
-            <img src={logoImg} alt="Asemm Logo" />
+            <img src={logoImg} alt="Asemm Logo" style={{ width: '48px', height: '48px', borderRadius: '12px' }} />
             <div>
-              <span className="no-wrap" style={{ fontSize: '22px', fontWeight: 900, lineHeight: 1 }}>ASEMM</span>
-              <span className="no-wrap" style={{ fontSize: '9px', color: 'var(--ps-blue)', fontWeight: 800, textTransform: 'uppercase' }}>PlayStation Cafe</span>
+              <span className="no-wrap" style={{ fontSize: '26px', fontWeight: 900, lineHeight: 1 }}>ASEMM</span>
+              <span className="no-wrap" style={{ fontSize: '10px', color: 'var(--ps-blue)', fontWeight: 800, textTransform: 'uppercase' }}>PlayStation Cafe</span>
             </div>
           </div>
 
@@ -82,9 +82,7 @@ const App: React.FC = () => {
                 <span className="no-wrap">ASEMM PS CAFE</span>
                 <span className="neon-text no-wrap">GERÇEK REKABET</span>
               </h1>
-              <p className="desc-text" style={{ marginBottom: '40px', maxWidth: '540px' }}>
-                {t('hero_subtitle')}
-              </p>
+              <p className="desc-text" style={{ marginBottom: '40px', maxWidth: '540px' }}>{t('hero_subtitle')}</p>
               <a href="https://wa.me/905519815916" className="btn btn-primary">
                 <Phone size={20} style={{ marginRight: '8px' }} />
                 <span className="no-wrap">{t('whatsapp_cta')}</span>

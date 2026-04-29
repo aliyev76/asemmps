@@ -211,7 +211,7 @@ header {
 
 .title-large { font-size: clamp(32px, 8vw, 72px); line-height: 1.1; margin-bottom: 24px; }
 .title-section { font-size: clamp(24px, 6vw, 48px); margin-bottom: 20px; }
-.desc-text { color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+.desc-text { color: var(--text-secondary); max-width: 600px; margin: 0; }
 .neon-text { color: var(--accent-neon); text-shadow: 0 0 15px rgba(0, 242, 255, 0.4); }
 
 .no-wrap {
