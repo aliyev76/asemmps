@@ -160,7 +160,8 @@ const App: React.FC = () => {
             </div>
             <div className="hero-content" style={{ textAlign: 'left' }}>
               <h2 className="title-section no-wrap" style={{ textAlign: 'inherit', marginBottom: '16px' }}>EFSANE OYUN LİSTEMİZ</h2>
-              <p className="desc-text" style={{ textAlign: 'inherit', marginBottom: '32px', margin: '0' }}>{t('games_subtitle')}</p>
+              <p className="desc-text" style={{ textAlign: 'inherit', margin: '0 0 8px 0' }}>FIFA 26, Mortal Kombat 11, GTA ve Asphalt!</p>
+              <p className="no-wrap" style={{ color: 'var(--text-secondary)', fontSize: 'clamp(11px, 2.5vw, 14px)', margin: '0 0 24px 0' }}>En güncel oyunlar ve turnuvalar için bizi takip et.</p>
               <div className="games-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px' }}>
                 {[
                   'FIFA 26', 
