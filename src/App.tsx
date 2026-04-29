@@ -210,7 +210,7 @@ const App: React.FC = () => {
                   <div style={{ padding: '14px', background: 'rgba(0,114,206,0.2)', borderRadius: '14px', flexShrink: 0 }}>
                     <MapPin size={24} color="var(--ps-blue)" />
                   </div>
-                  <div>
+                  <div style={{ textAlign: 'left' }}>
                     <div style={{ fontSize: '10px', fontWeight: 900, color: 'var(--ps-blue)', letterSpacing: '0.12em', marginBottom: '4px' }}>KONUM</div>
                     <div style={{ fontWeight: 600, fontSize: '14px', color: 'white', lineHeight: 1.4 }}>{t('contact_address')}</div>
                   </div>
@@ -239,7 +239,7 @@ const App: React.FC = () => {
                   <div style={{ padding: '14px', background: 'rgba(37,211,102,0.2)', borderRadius: '14px', flexShrink: 0 }}>
                     <Phone size={24} color="#25D366" />
                   </div>
-                  <div>
+                  <div style={{ textAlign: 'left' }}>
                     <div style={{ fontSize: '10px', fontWeight: 900, color: '#25D366', letterSpacing: '0.12em', marginBottom: '4px' }}>WHATSAPP</div>
                     <div className="no-wrap" style={{ fontWeight: 800, fontSize: '18px', color: 'white' }}>+90 551 981 59 16</div>
                   </div>
