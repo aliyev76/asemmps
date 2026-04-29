@@ -246,8 +246,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </a>
-                          </div>
-            <div style={{ padding: '40px', background: 'var(--bg-card)', borderRadius: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)' }}>
+            </div>
+            <div style={{ padding: '40px', background: 'var(--bg-card)', borderRadius: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)', alignSelf: 'start' }}>
                <InstagramIcon />
                <p style={{ marginTop: '24px', fontWeight: 700, fontSize: '17px' }}>En yeni turnuvalar için bizi takip edin!</p>
                <a href="https://www.instagram.com/asemmplaystation/" target="_blank" rel="noopener noreferrer" className="btn" style={{ marginTop: '24px', background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)', color: 'white', width: '100%' }}>
