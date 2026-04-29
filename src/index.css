@@ -150,7 +150,19 @@ header {
   .hero-content { order: 2; }
   .hero-image { order: 1; }
   .nav-actions { gap: 10px; }
-  .lang-list { display: none; } /* Hide on mobile to save space */
+  .lang-list { display: flex; gap: 8px; } /* Restore on mobile */
+  .lang-list button { padding: 4px 8px; font-size: 10px; }
+}
+
+@media (max-width: 480px) {
+  .title-large { font-size: 38px; }
+  .title-section { font-size: 32px; }
+  .desc-text { font-size: 15px; padding: 0 10px; }
+  .nav-wrapper { padding: 0 15px; }
+  .logo-area div span:first-child { font-size: 18px !important; }
+  .logo-area div span:last-child { font-size: 8px !important; }
+  .btn { width: 100%; padding: 12px; font-size: 13px; }
+  .btn-primary { padding: 10px 16px; }
 }
 
 /* Typography */

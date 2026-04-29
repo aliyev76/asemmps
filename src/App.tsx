@@ -89,9 +89,9 @@ const App: React.FC = () => {
               <Tv size={18} />
               PREMIUM ENTERTAINMENT
             </div>
-            <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', marginBottom: '24px' }}>{t('cinema_title')}</h2>
-            <p style={{ fontSize: '18px', color: 'white', marginBottom: '16px', fontWeight: 'bold', maxWidth: '700px', margin: '0 auto 16px' }}>{t('cinema_subtitle')}</p>
-            <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 40px' }}>{t('cinema_desc')}</p>
+            <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', marginBottom: '24px', textAlign: 'center' }}>{t('cinema_title')}</h2>
+            <p style={{ fontSize: '18px', color: 'white', marginBottom: '16px', fontWeight: 'bold', maxWidth: '600px', margin: '0 auto 16px', textAlign: 'center', lineHeight: 1.3 }}>{t('cinema_subtitle')}</p>
+            <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 40px', textAlign: 'center', fontSize: '15px' }}>{t('cinema_desc')}</p>
             
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
                <div style={{ padding: '10px 24px', border: '1px solid #E50914', borderRadius: '10px', color: '#E50914', fontWeight: 800, fontSize: '12px' }}>NETFLIX 4K</div>
