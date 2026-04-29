@@ -197,7 +197,9 @@ header {
   .hero-image { order: 1; }
   
   .title-large { font-size: clamp(38px, 10vw, 56px) !important; text-align: center; }
-  .title-section { font-size: clamp(32px, 8vw, 44px) !important; text-align: center; }
+  .title-section { font-size: clamp(32px, 8vw, 44px) !important; }
+  .netflix-subtitle { font-size: clamp(14px, 4.2vw, 17px) !important; line-height: 1.4 !important; padding: 0 10px; }
+  .netflix-desc { font-size: 13px !important; padding: 0 20px; }
   .desc-text { font-size: 17px !important; text-align: center; padding: 0 10px; }
   
   .btn { width: 100%; margin-top: 10px; }

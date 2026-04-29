@@ -106,7 +106,9 @@ const App: React.FC = () => {
               PREMIUM ENTERTAINMENT
             </div>
             <h2 className="title-section text-balance">{t('cinema_title')}</h2>
-            <p className="text-balance" style={{ fontSize: '20px', color: 'white', marginBottom: '16px', fontWeight: 'bold', maxWidth: '700px', margin: '0 auto 16px' }}>{t('cinema_subtitle')}</p>
+            <p className="netflix-subtitle text-balance" style={{ fontSize: '20px', color: 'white', marginBottom: '16px', fontWeight: 700, lineHeight: 1.3 }}>
+                Oyun biter, sinema başlar! <br className="mobile-only" /> VIP odalarımızda Netflix keyfini dev ekranda yaşa.
+            </p>
             <p className="desc-text text-balance">{t('cinema_desc')}</p>
             
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '40px', flexWrap: 'wrap' }}>
