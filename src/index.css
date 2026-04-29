@@ -204,10 +204,10 @@ header {
   
   .hero-image img { max-height: 350px; width: 100%; }
 
-  /* Mobile Contact Fix */
-  .contact-stack { display: flex; flex-direction: column; align-items: center; }
-  .contact-item { flex-direction: column; text-align: center; gap: 12px; width: 100%; }
-  .contact-text { display: flex; flex-direction: column; align-items: center; }
+  /* Mobile Contact Fix - Icons on Left, Items Stacked */
+  .contact-stack { display: flex; flex-direction: column; align-items: center; width: 100%; }
+  .contact-item { display: flex !important; flex-direction: row !important; align-items: center !important; text-align: left !important; gap: 16px !important; width: 100%; max-width: 340px; margin: 0 auto 24px; }
+  .contact-text { display: flex; flex-direction: column; align-items: flex-start !important; }
 }
 
 @media (max-width: 480px) {
