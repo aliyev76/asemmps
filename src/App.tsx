@@ -207,7 +207,7 @@ const App: React.FC = () => {
                 onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,114,206,0.8)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 30px rgba(0,114,206,0.2)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,114,206,0.3)'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; }}
                 >
-                  <div style={{ padding: '14px', background: 'rgba(0,114,206,0.2)', borderRadius: '14px', flexShrink: 0 }}>
+                  <div style={{ width: '52px', height: '52px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,114,206,0.2)', borderRadius: '14px', flexShrink: 0 }}>
                     <MapPin size={24} color="var(--ps-blue)" />
                   </div>
                   <div style={{ textAlign: 'left' }}>
@@ -236,7 +236,7 @@ const App: React.FC = () => {
                 onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(37,211,102,0.8)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 30px rgba(37,211,102,0.2)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(37,211,102,0.3)'; (e.currentTarget as HTMLDivElement).style.transform = 'none'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'none'; }}
                 >
-                  <div style={{ padding: '14px', background: 'rgba(37,211,102,0.2)', borderRadius: '14px', flexShrink: 0 }}>
+                  <div style={{ width: '52px', height: '52px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(37,211,102,0.2)', borderRadius: '14px', flexShrink: 0 }}>
                     <Phone size={24} color="#25D366" />
                   </div>
                   <div style={{ textAlign: 'left' }}>
