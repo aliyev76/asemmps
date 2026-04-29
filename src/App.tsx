@@ -115,8 +115,11 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="hero-image" style={{ maxWidth: '800px', margin: '0 auto' }}>
-             <img src={heroImg} alt="Netflix Lounge" style={{ borderRadius: '32px' }} />
+          <div style={{ maxWidth: '850px', margin: '0 auto', padding: '10px', background: '#1a1a22', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+             <div style={{ width: '100%', aspectRatio: '16/9', background: '#000', borderRadius: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle, rgba(229, 9, 20, 0.1) 0%, transparent 80%)' }}></div>
+                <span style={{ color: '#E50914', fontSize: 'clamp(40px, 12vw, 100px)', fontWeight: 900, letterSpacing: '-0.02em', textShadow: '0 0 40px rgba(229, 9, 20, 0.4)' }}>NETFLIX</span>
+             </div>
           </div>
         </div>
       </section>
@@ -175,22 +178,25 @@ const App: React.FC = () => {
       <section className="section-padding">
         <div className="container">
           <div className="hero-grid" style={{ maxWidth: '900px', margin: '0 auto' }}>
-            <div className="hero-content" style={{ textAlign: 'left' }}>
+            <div className="hero-content contact-stack">
               <h2 className="title-section" style={{ textAlign: 'inherit', marginBottom: '40px' }}>{t('contact_title')}</h2>
-              <div style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '20px', justifyContent: 'inherit' }}>
-                <div style={{ padding: '14px', background: 'rgba(0, 114, 206, 0.1)', color: 'var(--ps-blue)', borderRadius: '14px' }}><MapPin size={24} /></div>
-                <div style={{ textAlign: 'left' }}>
-                  <div style={{ fontSize: '11px', color: 'var(--ps-blue)', fontWeight: 900 }}>KONUM</div>
-                  <div style={{ fontWeight: 700, fontSize: '16px' }}>{t('contact_address')}</div>
+              
+              <div className="contact-item">
+                <div className="contact-icon"><MapPin size={24} /></div>
+                <div className="contact-text">
+                  <div className="contact-label">KONUM</div>
+                  <div className="contact-value">{t('contact_address')}</div>
                 </div>
               </div>
-              <div style={{ marginBottom: '40px', display: 'flex', alignItems: 'center', gap: '20px', justifyContent: 'inherit' }}>
-                <div style={{ padding: '14px', background: 'rgba(0, 114, 206, 0.1)', color: 'var(--ps-blue)', borderRadius: '14px' }}><Phone size={24} /></div>
-                <div style={{ textAlign: 'left' }}>
-                  <div style={{ fontSize: '11px', color: 'var(--ps-blue)', fontWeight: 900 }}>WHATSAPP</div>
-                  <div style={{ fontWeight: 800, fontSize: '20px' }}>+90 551 981 59 16</div>
+
+              <div className="contact-item">
+                <div className="contact-icon"><Phone size={24} /></div>
+                <div className="contact-text">
+                  <div className="contact-label">WHATSAPP</div>
+                  <div className="contact-value">+90 551 981 59 16</div>
                 </div>
               </div>
+
               <a href="https://wa.me/905519815916" className="btn btn-primary" style={{ width: '100%' }}>
                 {t('whatsapp_cta')}
               </a>
