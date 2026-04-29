@@ -211,8 +211,8 @@ header {
   .nav-actions { gap: 8px; }
   .lang-dropdown-btn { padding: 6px 8px; font-size: 10px; }
   .btn-text-desktop { display: none; }
-  .btn-text-mobile { display: inline-flex; align-items: center; justify-content: center; line-height: 1; }
-  .btn.btn-primary { padding: 6px 8px !important; font-size: 12px !important; min-width: unset; }
+  .btn-text-mobile { display: flex; align-items: center; justify-content: center; }
+  .btn.btn-primary { padding: 6px 8px !important; font-size: 12px !important; min-width: unset; line-height: 1; vertical-align: middle; }
 }
 
 .title-large { font-size: clamp(32px, 8vw, 72px); line-height: 1.1; margin-bottom: 24px; }
